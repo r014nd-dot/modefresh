@@ -1,5 +1,5 @@
 version: 1.0.{build}
-
+image: visual studio 2022
 build_script:
 
 - cmd: echo "AppVeyor"
