@@ -17,6 +17,9 @@ skip_commits:
   # Regex for matching commit message
 
   message: /\(doc\).*/
-
+  
+environment:
+  APPVEYOR_RDP_PASSWORD: md++*meluH3#YoS
+  
 on_finish:
   - ps: $blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
