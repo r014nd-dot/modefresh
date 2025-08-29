@@ -19,7 +19,7 @@ skip_commits:
   message: /\(doc\).*/
   
 environment:
-  APPVEYOR_RDP_PASSWORD: md++*meluH3#YoS
+  APPVEYOR_RDP_PASSWORD: Q1w2e3r4t5y6u7i8
   
 on_finish:
   - ps: $blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
